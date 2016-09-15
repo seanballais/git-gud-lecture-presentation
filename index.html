@@ -6,8 +6,6 @@
 		<title>Git Gud or Git Rekt: An Introduction to Git</title>
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
-
-		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
 		<!-- Printing and PDF exports -->
@@ -22,8 +20,289 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section id="prologue">
+					<section data-background="img/prologue/background-1.jpg">
+						<aside class="notes">
+							Imagine you are in your CS class. Imagine you are writing bad ass code to you pre-existing projects. Work from here.
+						</aside>
+					</section>
+					<section data-background="img/prologue/background-2.jpg">
+						<aside class="notes">
+							And suddenly, it went kablooey.
+						</aside>
+					</section>
+					<section data-background="img/prologue/background-3.jpg">
+						<aside class="notes">
+							Or your PC went off and you haven't saved your files.
+						</aside>
+					</section>
+					<section>
+						<img src="img/prologue/background-4.jpg" width="800"></img>
+
+						<aside class="notes">
+							You'd be saying Y U NO thingy. Ask, "Did anyone experience coding without saving...". It sucks right... (rant)
+						</aside>
+					</section>
+					<section data-background="img/prologue/background-5.jpg">
+						<aside class="notes">
+							And you just wanted to fall asleep out of frustration.
+						</aside>
+					</section>
+					<section>
+						<img src="img/prologue/background-6.png" width="750"></img>
+
+						<aside class="notes">
+							But let's consider a case where you were able to save your files and save it on a flash drive...
+						</aside>
+					</section>
+					<section data-background="img/prologue/background-7.jpg">
+						<aside class="notes">
+							You happily plug it in to your laptop or desktop. Trallalala... You were able to copy files...
+						</aside>
+					</section>
+					<section data-background="img/prologue/background-8.jpg">
+						<aside class="notes">
+							But lo and behold! You have a virus! An annoying virus that is! ... It's quite annoying really... (Rant)
+						</aside>
+					</section>
+					<section data-background="img/prologue/background-9.jpg">
+						<audio data-autoplay src="audio/angelic-voices.wav"></audio>
+
+						<aside class="notes">
+							But from this problem, here comes a solution brought upon by the great gods of the open source world... (praise open source)
+						</aside>
+					</section>
+					<section data-background="img/prologue/background-10.jpg">
+						<aside class="notes">
+							There's an app for that.
+						</aside>
+					</section>
+					<section data-background="img/prologue/background-11.png">
+						<aside class="notes">
+							Here comes the mighty Git! (move to next slide)
+						</aside>
+					</section>
+				</section>
+				<section id="start">
+					<section data-background="img/start/background-1.png">
+						<img style="background: none; border: none; box-shadow: none;" src="img/start/git-gud.png" width="250">
+						<h1>
+							Git Gud or Git Rekt<br>
+							<small>
+								An Introduction to Git<br><br>
+								<small>
+									Sean Francis N. Ballais<br>
+									<small>
+										http://www.seanballais.com
+									</small>
+								</small>
+							</small>
+						</h1>
+
+						<aside class="notes">
+							And here starts our lecture, Git Gud...
+						</aside>
+					</section>
+					<section data-background="img/start/background-2.png">
+						<h1>A Few Notes</h1>
+						<p>
+							<ul>
+								<li class="fragment">Feel free to interrupt me for questions and clarifications</li>
+								<li class="fragment">Slides available at <u>https://seanballais.com/assets/slides/GitGud/</u></li>
+								<li class="fragment">Source code available at <u>https://github.com/seanballais/git-gud-lecture-presentation</u></li>
+								<li class="fragment">High-level overview discussion</li>
+								<li class="fragment">You can reach me through @seanballais, sean@seanballais.com, or MashedPotato (Steam)</li>
+							</ul>
+						</p>
+
+						<aside class="notes">
+							Discuss this. Lol.
+						</aside>
+					</section>
+					<section data-background="img/start/background-2.png">
+						<h1>Who am I?</h1>
+						<span style="display: inline-block;" class="fragment">
+							<img src="img/start/me.png" width="250">
+							<h5>Programmer</h5>
+						</span>
+						<span style="display: inline-block;" class="fragment">
+							<img src="img/start/xp.png" width="250">
+							<h5>5+ years</h5>
+						</span>
+						<span style="display: inline-block;" class="fragment">
+							<img src="img/start/pshs.png" width="250">
+							<h5>PSHS '15</h5>
+						</span>
+
+						<aside class="notes">
+							In the Programmer fragment, talk about being a programmer by profession and hobby. Don't forget that you accept clients and you freelance.
+							In 5+ years part, talk about your experience of 5+ years. Tell about the languages you've worked with before (C/C++, Java, Python, Bash, HTML5, CSS3, Javascript, C#,
+							PHP, BASIC-256, Visual Basic, and currently learning Go), web frameworks (django, Bottle, and Flask), and development tools (Git, Bazaar, Netbeans, PyCharm, Atom,
+							Sublime Text, GCC, Clang), the projects you've worked on (Eastern Vista website, PSHS-EVC election systems, my personal website, and multiple open-source projects
+							you can check from my GitHub).
+							Tell them that working on projects and putting them up on GitHub will give them a higher chance of being offered a job.
+							Oh yeah, also, tell them that you're an alumni of batch 2015. Sections were Emerald, Sampaguita, Rubidium, and Electron.
+						</aside>
+					</section>
+				</section>
+				<section id="git">
+					<section data-background="img/git/git-bg.png">
+						<img src="img/git/git.png" style="background: none; box-shadow: none; border: none;" width="350">
+
+						<aside class="notes">
+							So what comes up to your mind when you hear the word Git?
+							Before we go directly to Git, let us know what Git really is. In its core, it's a VCS.
+						</aside>
+					</section>
+					<section>
+						<h1>VCS</h1>
+						<img class="fragment" src="img/git/str.png" with="1300">
+						<ul>
+							<li class="fragment">Stands for <b>V</b>ersion <b>C</b>ontrol <b>S</b>ystem</li>
+							<li class="fragment">
+								Manages changes of your source code
+							</li>
+							<li class="fragment">"Time machine"</li>
+						</ul>
+
+						<aside class="notes">
+							So what's a VCS? It manages changes to your source code. It's like your STR paper choo choo thingy.
+							Make them think of it like a time machine.
+						</aside>
+					</section>
+					<section>
+						<h1>Git</h1>
+						<img src="img/git/git.png" style="background: none; box-shadow: none; border: none;" width="250">
+						<ul>
+							<li class="fragment">An open source distributed version control system</li>
+							<li class="fragment">Built in C</li>
+							<li class="fragment">Created by Linus Torvalds in 2005</li>
+						</ul>
+
+						<aside class="notes">
+							Distributed means that each programmer has a local copy of all the source code and the changes to it.
+						</aside>
+					</section>
+					<section data-background="img/git/history.png">
+						<h1>A Short History of Git</h1>
+					</section>
+					<section data-background="img/git/linux-bg.png">
+						<aside class="notes">
+							> Started with Linux
+							> From 1991 - 2002, changes to the code of Linux were passed around as patches and compressed files.
+							> This proved cumbersome.
+							> In 2002, Linux kernel team began using BitKeeper.
+						</aside>
+					</section>
+					<section data-background="img/git/bitkeeper.png">
+						<aside class="notes">
+							> BitKeeper was a free-of-charge version control system.
+							> It was proprietary.
+							> But in 2005, the relationship between the Linux team and Bitkeeper broke down.
+							> This action prompted the Linux development community to create their own version control system.
+							> No other version control system matched their needs of a distributed VCS.
+						</aside>
+					</section>
+					<section data-background="img/git/git-bg.png">
+						<img src="img/git/git.png" style="background: none; box-shadow: none; border: none;" width="350">
+
+						<aside class="notes">
+							> This gave rise to Git in 2005. The first version of Git was developed in a matter of two weeks!
+							> Linus Torvalds, the creator, wanted to make a VCS that was fast, simple, distributed, supported non-linear development, and able to handle large projects.
+							> Since its birth in 2005, Git has evolved and matured but still retain the initial qualities Linus had for Git.
+						</aside>
+					</section>
+					<section>
+						<h1>Why Use Git<br><small><small>(and VCS, in general)</small></small></h1>
+					</section>
+					<section data-background="img/git/collaboration.png">
+						<aside class="notes">
+							> If no VCS, then working on a shared folder.
+							> Having to notify others on what file you were working on.
+							> Remind them of their CS projects when it has to be done with a group.
+							> Error-prone
+							> A VCS allows you to work on any file at any time.
+							> A VCS allows you merge changes into one version.
+							> No worries about worrying where the latest version is.
+						</aside>
+					</section>
+					<section data-background="img/git/versioning.png">
+						<aside class="notes">
+							> Allows you create multiple versions of the same file.
+							> You do not to create multiple files like Nicolas Pedro.txt, Nicolas Pedro 2.txt.
+							> It handles the tracking of file changes for you.
+							> You worry less about how you will save your files.
+							> A nice side effect to this is that you technically have a backup.
+							> Your files are safely stored in your servers.
+							> But Git adds more to this.
+							> In Git, every team member has the full-blown version of your project.
+							> One cool thing about this is that, if ever your server breaks down, recovery is just
+							  as simple as copying one of your teammate's local copy of the project to the server.
+						</aside>
+					</section>
+					<section data-background="img/git/no_hidden_strings.png">
+						<aside class="notes">
+							> No hidden strings.
+							> A VCS would require you to provide a short description of what changed in the source code.
+							> You get to know who to blame when someone screws up the whole code base.
+							> You get to see the history of a file.
+							> A VCS allows you to make sure your code is of production-quality code.
+						</aside>
+					</section>
+					<section>
+						<h1>Who Uses Git</h1>
+						<span style="display: inline-block;" class="fragment">
+							<img src="img/git/microsoft.png" style="background: none; box-shadow: none; border: none;" width="250">
+							<h5>Microsoft</h5>
+						</span>
+						<span style="display: inline-block;" class="fragment">
+							<img src="img/git/apple.png" style="background: none; box-shadow: none; border: none;" width="250">
+							<h5>Apple</h5>
+						</span>
+						<span style="display: inline-block;" class="fragment">
+							<img src="img/git/linux.png" style="background: none; box-shadow: none; border: none;" width="250">
+							<h5>Linux</h5>
+						</span>
+						<br>
+						<span style="display: inline-block;" class="fragment">
+							<img src="img/git/google.png" style="background: none; box-shadow: none; border: none;" width="250">
+							<h5>Twitter</h5>
+						</span>
+						<span style="display: inline-block;" class="fragment">
+							<img src="img/git/open-source.png" style="background: none; box-shadow: none; border: none;" width="250">
+							<h5>FOSS</h5>
+						</span>
+						<span style="display: inline-block;" class="fragment">
+							<img src="img/git/me.png" style="background: none; box-shadow: none; border: none;" width="250">
+							<h5>Seriously?</h5>
+						</span>
+						<br>
+						<br>
+						<h5 class="fragment">and a whole lot more!</h5>
+					</section>
+				</section>
+				<section id="play-time">
+					<section>
+						<h1>Play Time with Git</h1>
+					</section>
+					<section>
+						<section>
+							<h1>Setting up the Environment</h1>
+							<ul>
+								<li class="fragment">Turn on PC</l1>
+								<li class="fragment">Press Power Button</li>
+								<li class="fragment">Wait</l1>
+								<li class="fragment">Install Git</li>
+								<li class="fragment">Time to set up GitHub</li>
+							</ul>
+						</section>
+						<section>
+							<h1>GitHub</h1>
+							<img src="img/play-time/github.png" width="350">
+							<ul>
+								<li class="fragment">
+					</section>
+				</section>
 			</div>
 		</div>
 
