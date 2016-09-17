@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 	<head>
@@ -84,7 +85,7 @@
 					</section>
 				</section>
 				<section id="start">
-					<section data-background="img/start/background-1.png">
+					<section data-background="img/start/background-1.jpg">
 						<img style="background: none; border: none; box-shadow: none;" src="img/start/git-gud.png" width="250">
 						<h1>
 							Git Gud or Git Rekt<br>
@@ -108,7 +109,7 @@
 						<p>
 							<ul>
 								<li class="fragment">Feel free to interrupt me for questions and clarifications</li>
-								<li class="fragment">Slides available at <u>https://seanballais.com/assets/slides/GitGud/</u></li>
+								<li class="fragment">Slides available at <u>https://seanballais.com/assets/slides/GitGud.pdf</u></li>
 								<li class="fragment">Source code available at <u>https://github.com/seanballais/git-gud-lecture-presentation</u></li>
 								<li class="fragment">High-level overview discussion</li>
 								<li class="fragment">You can reach me through @seanballais, sean@seanballais.com, or MashedPotato (Steam)</li>
@@ -119,7 +120,7 @@
 							Discuss this. Lol.
 						</aside>
 					</section>
-					<section data-background="img/start/background-2.png">
+					<section data-background="rgb(46, 105, 154)">
 						<h1>Who am I?</h1>
 						<span style="display: inline-block;" class="fragment">
 							<img src="img/start/me.png" width="250">
@@ -175,7 +176,7 @@
 						<img src="img/git/git.png" style="background: none; box-shadow: none; border: none;" width="250">
 						<ul>
 							<li class="fragment">An open source distributed version control system</li>
-							<li class="fragment">Built in C</li>
+							<li class="fragment">Built using C</li>
 							<li class="fragment">Created by Linus Torvalds in 2005</li>
 						</ul>
 
@@ -184,7 +185,7 @@
 						</aside>
 					</section>
 					<section data-background="img/git/history.png">
-						<h1>A Short History of Git</h1>
+						<h1 style="text-shadow: 0px 10px 10px rgb(36, 40, 42);">A Short History of Git</h1>
 					</section>
 					<section data-background="img/git/linux-bg.png">
 						<aside class="notes">
@@ -212,10 +213,11 @@
 							> Since its birth in 2005, Git has evolved and matured but still retain the initial qualities Linus had for Git.
 						</aside>
 					</section>
-					<section>
+					<section data-background="img/git/hammer.png">
 						<h1>Why Use Git<br><small><small>(and VCS, in general)</small></small></h1>
 					</section>
 					<section data-background="img/git/collaboration.png">
+						<h2>Collaboration</h2>
 						<aside class="notes">
 							> If no VCS, then working on a shared folder.
 							> Having to notify others on what file you were working on.
@@ -227,6 +229,7 @@
 						</aside>
 					</section>
 					<section data-background="img/git/versioning.png">
+						<h2>Versioning</h2>
 						<aside class="notes">
 							> Allows you create multiple versions of the same file.
 							> You do not to create multiple files like Nicolas Pedro.txt, Nicolas Pedro 2.txt.
@@ -241,6 +244,7 @@
 						</aside>
 					</section>
 					<section data-background="img/git/no_hidden_strings.png">
+						<h2>No hidden strings</h2>
 						<aside class="notes">
 							> No hidden strings.
 							> A VCS would require you to provide a short description of what changed in the source code.
@@ -249,32 +253,31 @@
 							> A VCS allows you to make sure your code is of production-quality code.
 						</aside>
 					</section>
-					<section>
+					<section data-background="rgb(195, 108, 37)">
 						<h1>Who Uses Git</h1>
 						<span style="display: inline-block;" class="fragment">
-							<img src="img/git/microsoft.png" style="background: none; box-shadow: none; border: none;" width="250">
-							<h5>Microsoft</h5>
+							<img src="img/git/microsoft.png" style="background: none; box-shadow: none; border: none;" width="120">
+							<p>Microsoft</p>
 						</span>
 						<span style="display: inline-block;" class="fragment">
-							<img src="img/git/apple.png" style="background: none; box-shadow: none; border: none;" width="250">
-							<h5>Apple</h5>
+							<img src="img/git/apple.png" style="background: none; box-shadow: none; border: none;" width="120">
+							<p>Apple</p>
 						</span>
 						<span style="display: inline-block;" class="fragment">
-							<img src="img/git/linux.png" style="background: none; box-shadow: none; border: none;" width="250">
-							<h5>Linux</h5>
-						</span>
-						<br>
-						<span style="display: inline-block;" class="fragment">
-							<img src="img/git/google.png" style="background: none; box-shadow: none; border: none;" width="250">
-							<h5>Twitter</h5>
+							<img src="img/git/linux.png" style="background: none; box-shadow: none; border: none;" width="120">
+							<p>Linux</p>
 						</span>
 						<span style="display: inline-block;" class="fragment">
-							<img src="img/git/open-source.png" style="background: none; box-shadow: none; border: none;" width="250">
-							<h5>FOSS</h5>
+							<img src="img/git/twitter.png" style="background: none; box-shadow: none; border: none;" width="120">
+							<p>Twitter</p>
 						</span>
 						<span style="display: inline-block;" class="fragment">
-							<img src="img/git/me.png" style="background: none; box-shadow: none; border: none;" width="250">
-							<h5>Seriously?</h5>
+							<img src="img/git/open-source.png" style="background: none; box-shadow: none; border: none;" width="120">
+							<p>FOSS</p>
+						</span>
+						<span style="display: inline-block;" class="fragment">
+							<img src="img/git/me.png" style="background: none; box-shadow: none; border: none;" width="120">
+							<p>Seriously?</p>
 						</span>
 						<br>
 						<br>
@@ -282,25 +285,166 @@
 					</section>
 				</section>
 				<section id="play-time">
-					<section>
+					<section data-background="img/play-time/play.png">
 						<h1>Play Time with Git</h1>
 					</section>
 					<section>
-						<section>
-							<h1>Setting up the Environment</h1>
-							<ul>
-								<li class="fragment">Turn on PC</l1>
-								<li class="fragment">Press Power Button</li>
-								<li class="fragment">Wait</l1>
-								<li class="fragment">Install Git</li>
-								<li class="fragment">Time to set up GitHub</li>
-							</ul>
-						</section>
-						<section>
-							<h1>GitHub</h1>
-							<img src="img/play-time/github.png" width="350">
-							<ul>
-								<li class="fragment">
+						<h1>Setting Up Git</h1>
+						<ul>
+							<li class="fragment">Run the installer or use <code>apt-get</code></li>
+							<li class="fragment">
+								Once installed, open Command Prompt or Terminal and execute:
+								<pre>
+									<code data-trim data-noescape>
+										$ git config --global user.name "your name"<br>$ git config --global user.email "your@email.com"
+									</code>
+								</pre>
+							</li>
+							<li class="fragment">Time to set up a GitHub account</li>
+						</ul>
+
+						<aside class="notes">
+							> Let them sign up for an account in github
+						</aside>
+					</section>
+					<section>
+						<h1>GitHub</h1>
+						<img src="img/play-time/github.png" style="background: none; box-shadow: none; border: none;" width="350"><br>
+					</section>
+					<section>
+						<img src="img/play-time/github-home.png" style="background: none; box-shadow: none; border: none;">
+						<h3>Web-based Git repository hosting service</h3>
+
+						<aside class="notes">
+							> So you don't have to worry much about setting up your own Git servers.
+							> It provides an easy to use interface for source code management.
+							> It's really intuitive if I say so myself.
+						</aside>
+					</section>
+					<section>
+						<img src="img/play-time/github-collab.png">
+						<h3>Has collaboration features</h3>
+
+						<aside class="notes">
+							> Has bug tracking, wikis, graphs, email notifications, and a whole lot more.
+							> So if you want to merge code, you can just create a pull request that contains the changes of your code and people can review it.
+						</aside>
+					</section>
+					<section>
+						<img src="img/play-time/github-free.png">
+						<h3>FREE!<br><small>(for public repositories)</small></h3>
+
+						<aside class="notes">
+							> And for public repositories (which are repositories where the source code can be seen by anyone), they are free!
+							> You can have unlimited public repositories in GitHub.
+							> And you can practically store anything in the public repositories.
+							> There are private repositories but you have to pay for them in GitHub.
+						</aside>
+					</section>
+					<section>
+						<h1>A Git Demo</h1>
+
+						<aside class="notes">
+							> Create local git repo.
+							> Create sample files.
+							> Check status of files.
+							> Stage files (add).
+							> Remove a file from the file system and the repo (git rm).
+							> Commit changes.
+							> Create a GitHub repo.
+							> git add remote origin Github repo HTTPS link.
+							> Push changes.
+							> Edit online from GitHub.
+							> Pull changes.
+						</aside>
+					</section>
+					<section data-background="rgb(210, 158, 42)">
+						<h1>Git Workflow</h1>
+
+						<span style="display: inline-block;" class="fragment">
+							<img src="img/play-time/working_directory.png" style="background: none; box-shadow: none; border: none;" width="150">
+							<p><small>Working Directory</small></p>
+						</span>
+						<span style="display: inline-block;" class="fragment">
+							<img src="img/play-time/staging.png" style="background: none; box-shadow: none; border: none;" width="150">
+							<p><small>Staging</small></p>
+						</span>
+						<span style="display: inline-block;" class="fragment">
+							<img src="img/play-time/local_repo.png" style="background: none; box-shadow: none; border: none;" width="150">
+							<p><small>Local repo</small></p>
+						</span>
+						<span style="display: inline-block;" class="fragment">
+							<img src="img/play-time/repo.png" style="background: none; box-shadow: none; border: none;" width="150">
+							<p><small>Online repo</small></p>
+						</span>
+
+						<aside class="notes">
+							> Working directory: It contains the actual project files.
+							> Index: It is the staging area where you add the project files that needs to be committed.
+						</aside>
+					</section>
+					<section>
+						<h1>Branching</h1>
+						<img src="img/play-time/branch.png" width="450">
+						<ul>
+							<li class="fragment">Used to develop features or experiment isolated from each other.</li>
+							<li class="fragment">Branches is a clone of its origin branch.</li>
+							<li class="fragment">Master is the default branch.</li>
+						</ul>
+
+						<aside class="notes">
+							> Demo branching.
+						</aside>
+					</section>
+					<section>
+						<img src="img/play-time/git-model.png">
+					</section>
+					<section>
+						<h1>Git Branch commands</h1>
+						<pre>
+							<code>$ git checkout -b branch_name # Create a new branch<br>$ git checkout branch_name # Switch current branch to branch_name<br>$ git merge branch_name # Merge current branch with branch_name<br>$ git branch -d branch_name # Delete branch_name from the local repo<br>$ git push :origin branch_name # Delete branch_name from the online repo</code>
+						</pre>
+					</section>
+					<section>
+						<h1>Some Git tricks</h1>
+						<ul>
+							<li class="fragment">
+								Tagging commits
+								<pre>
+									<code data-trim data-no-escape>$ git tag tag_name commit_id</code>
+								</pre>
+							</li>
+							<li class="fragment">
+								Resetting your working directory
+								<pre>
+									<code data-trim data-no-escape>$ git reset</code>
+								</pre>
+							</li>
+							<li class="fragment">
+								Checking logs
+								<pre>
+									<code data-trim data-no-escape>$ git log</code>
+								</pre>
+							</l1>
+						</ul>
+					</section>
+					<section>
+						<h1>Now, your turn</h1>
+						<ul>
+							<li class="fragment">Decide on what app you all will create</li>
+							<li class="fragment">Assign each group with one functionality of the app</li>
+							<li class="fragment">Don't forget to create a repo online with Git</li>
+							<li class="fragment">Push code to the repo online with Git</li>
+							<li class="fragment">Lastly, <span class="fragment">do well in your exams especially in Math and CS.</li>
+						</ul>
+					</section>
+					<section data-background="img/play-time/man.png">
+						<h1>It's only the beginning<br><h3><small>(Never give it up, never let it down and desert you)</small></h3></h1>
+
+						<aside class="notes">
+							> Encourage them to explore Git more.
+							> Encourage them.
+						</aside>
 					</section>
 				</section>
 			</div>
